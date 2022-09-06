@@ -6,10 +6,12 @@ services:
       POSTGRES_USER: musyimiworks
       POSTGRES_PASSWORD: password
       PGDATA: /data/postgres
+    environment:
+      SPRING_PROFILES_ACTIVE=dev
     volumes:
       - postgres:/data/postgres
     ports:
-      - "5433:5433"
+      - "5433:5432"
     networks:
       - postgres
     restart: unless-stopped
