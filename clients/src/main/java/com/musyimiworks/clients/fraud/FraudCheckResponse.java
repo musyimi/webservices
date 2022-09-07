@@ -1,4 +1,4 @@
-package com.musyimiworks.customer;
+package com.musyimiworks.clients.fraud;
 
 public record FraudCheckResponse(Boolean isFraudster) {
 }
